@@ -1,0 +1,12 @@
+Instructions to run the code:
+
+Training:
+1. From directory cil-road-segmentation-final, run python3.5 rsrcnn/vgg16.py
+2. The trained models, after every 3 epochs, are saved in rsrcnn/train_dir
+
+Inference on our trained model:
+1. Dowload the checkpoint file from https://polybox.ethz.ch/index.php/s/WZB9eOGZAoM0qDb
+2. Put them in directory rsrcnn/train_dir/
+3. From directory cil-road-segmentation-final, run python3.5 rsrcnn/vgg16.py submit
+4. The predicted segmentation images of the satellite images in test set are saved in /rsrcnn/kaggle/test_set_output/
+5. The csv submission file to be submitted on kaggle is saved in directory /cil-road-segmentation-final/
